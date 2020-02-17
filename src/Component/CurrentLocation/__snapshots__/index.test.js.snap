@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Current Location component should render component correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <a
+        href="/getWeatherData"
+      >
+        <button
+          data-testid="getWeatherData"
+          type="submit"
+        >
+          <div>
+            GET WEATHER DATA 
+          </div>
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

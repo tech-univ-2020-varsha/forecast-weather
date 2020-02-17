@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Button component should render button correctly 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="test-btn"
+    type="submit"
+  >
+    <div>
+      Test text
+    </div>
+  </button>
+</DocumentFragment>
+`;

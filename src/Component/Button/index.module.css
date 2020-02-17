@@ -1,0 +1,14 @@
+.getWeatherBtn{
+    background-color: bisque;
+    text-align: center;
+   border-radius: 1em;
+   background-color: rgb(234, 244, 246);
+   border: solid gray; ;
+}
+.btnText{
+    padding: 1em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}

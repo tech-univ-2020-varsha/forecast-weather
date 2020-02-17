@@ -1,0 +1,12 @@
+.weatherData{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+}
+
+.slider{
+    margin: 3em;
+    padding:2em;
+    background-color: rgb(200, 215, 236);
+
+}

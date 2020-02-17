@@ -1,0 +1,14 @@
+.carousel{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: solid white;
+    margin: 1em;
+    justify-content: center;
+}
+
+.carouselData{
+    align-items: center;
+    color: rgba(27, 14, 14, 0.849);
+    padding: 0.2em;
+}

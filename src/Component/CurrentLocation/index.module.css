@@ -1,0 +1,15 @@
+.weatherDataDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  margin: 0;
+}
+
+.btnItem{
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
