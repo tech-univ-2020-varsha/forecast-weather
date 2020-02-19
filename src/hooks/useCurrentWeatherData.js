@@ -8,12 +8,16 @@ const useCurrentWeatherData = (url) => {
   const [completed, setCompleted] = useState(false);
   useEffect(() => {
     const getData = async () => {
-      const result = await axios.get(url);
-      const weatherReport = result.data.main;
-      setTemp(weatherReport.temp);
-      setPressure(weatherReport.pressure);
-      setHumidity(weatherReport.humidity);
-      setCompleted(true);
+      try {
+        const result = await axios.get(url);
+        const weatherReport = result.data.main;
+        setTemp(weatherReport.temp);
+        setPressure(weatherReport.pressure);
+        setHumidity(weatherReport.humidity);
+        setCompleted(true);
+      } catch (err) {
+        setCompleted(false);
+      }
     };
     getData();
   }, []);

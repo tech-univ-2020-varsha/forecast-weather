@@ -5,7 +5,7 @@ import * as styles from './index.module.css';
 import Button from '../Button/index';
 
 const CurrentLocation = ({
-  isGeolocationAvailable, isGeolocationEnabled, coords, setLongitude, setLatitude,
+  isGeolocationAvailable, isGeolocationEnabled, coords,
 }) => {
   let enable = false;
   if (!(isGeolocationAvailable && isGeolocationEnabled)) {
@@ -14,8 +14,8 @@ const CurrentLocation = ({
   }
   if (coords) { enable = true; }
   if (enable) {
-    setLongitude(coords.longitude);
-    setLatitude(coords.latitude);
+    localStorage.setItem('lat', coords.latitude);
+    localStorage.setItem('long', coords.longitude);
   }
 
   return (

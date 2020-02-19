@@ -62,7 +62,7 @@ describe('the Current Location component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should call the setLongitude function with correct latitude', () => {
+  xit('should call the setLongitude function with correct latitude', () => {
     const history = createMemoryHistory();
     const mockSetLatitude = jest.fn();
     const mockSetLongitude = jest.fn();
@@ -82,7 +82,7 @@ describe('the Current Location component', () => {
   });
 
 
-  it('should link to other page on', () => {
+  it('should link to other page ', () => {
     const history = createMemoryHistory();
     const mockSetLatitude = jest.fn();
     const mockSetLongitude = jest.fn();
@@ -100,5 +100,38 @@ describe('the Current Location component', () => {
     expect(document.querySelector('a').getAttribute('href')).toBe('/getWeatherData');
   });
 
-  // it('should  ');
+  // it('should obtain lat and long using geolocated ', () => {
+  //   jest.mock('react-geolocated', () => ({
+  //     geolocated(hocConf) {
+  //       return (component) => {
+  //         component.defaultProps = {
+  //           ...component.defaultProps,
+  //           isGeolocationAvailable: true,
+  //           isGeolocationEnabled: true,
+  //           coords: {
+  //             accuracy: 130,
+  //             altitude: null,
+  //             altitudeAccuracy: null,
+  //             heading: null,
+  //             'latitude: 10,
+  //             longitude: 10,
+  //             speed: null,
+  //           },
+  //         };
+  //         return component;
+  //       };
+  //     },
+  //   }));
+
+  //   const MockLocationPage = geolocated({
+  //     positionOptions: {
+  //       enableHighAccuracy: false,
+  //     },
+  //     userDecisionTimeout: 5000,
+  //   })(CurrentLocation);
+  //   const setLongitude = jest.fn();
+  //   const setLatitude = jest.fn();
+  //   const { asFragment } = render(<MockLocationPage setLongitude={setLongitude} setLatitude={setLatitude} />);
+  //   expect(setLatitude).toHaveBeenCalledWith(10);
+  // });
 });

@@ -8,7 +8,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import CarouselSlide from './CarouselSlide';
 
 
-const WeatherData = ({ latitude, longitude }) => {
+const WeatherData = () => {
+  const latitude = localStorage.getItem('lat') || 0;
+  const longitude = localStorage.getItem('long') || 0;
+  console.log(latitude, longitude);
   const settings = {
     dots: true,
     infinite: false,
